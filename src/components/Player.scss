@@ -1,0 +1,69 @@
+.Player {
+  border-top: 1px solid $black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  padding: 5px;
+  background-color: $dark-gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    display: none;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    img {
+      display: block;
+      width: 5%;
+    }
+  }
+
+  .track-info {
+    padding: 0 0 0 5%;
+    width: 40%;
+
+    .track-name {
+      font-size: 1rem;
+      margin: 0 0 5px 0;
+    }
+
+    .artist-name {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+  }
+
+  .time-info {
+    display: none;
+  }
+
+  @media screen and (min-width: $almost-small-screen) {
+    .time-info {
+      width: 30%;
+      margin: 0 4% 0 0;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .play-pause {
+    width: 40px;
+    height: 40px;
+    padding: 0 4%;
+    width: 50px;
+    height: 50%;
+
+    svg {
+      fill: $light-gray;
+    }
+  }
+}
+
+@media screen and (min-width: $almost-small-screen) {
+  .Player {
+    justify-content: normal;
+  }
+}

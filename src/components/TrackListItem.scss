@@ -1,0 +1,58 @@
+.TrackListItem {
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-gray;
+  }
+
+  &.TrackListItem-selected {
+    background-color: $highlight-gray;
+    color: $orange;
+  }
+
+  .sound-icon {
+    width: 1.5rem;
+
+    > svg {
+      fill: $orange;
+    }
+  }
+
+  .extra-cell {
+    display: none;
+  }
+
+  td {
+    display: block;
+    padding: 5px;
+
+    &:first-child {
+      display: table-cell;
+      padding: 0 0 0 2rem;
+      width: 3rem;
+    }
+
+    &:nth-child(2) {
+      font-size: 1.3rem;
+    }
+
+    &:last-child {
+      padding-right: 3rem;
+    }
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    .extra-cell {
+      display: table-cell;
+    }
+
+    td {
+      display: table-cell;
+
+      &:nth-child(2) {
+        font-size: inherit;
+      }
+    }
+  }
+}

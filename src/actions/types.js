@@ -1,0 +1,2 @@
+export const FETCH_COLLECTION = "FETCH_COLLECTION";
+export const PLAY_TRACK = "PLAY_TRACK";

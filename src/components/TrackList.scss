@@ -1,0 +1,41 @@
+.TrackList {
+  border-spacing: 0;
+  border-spacing: 0 2px;
+  border-collapse: collapse;
+
+  tr {
+    padding: 2rem;
+    border-bottom: 1px solid $dark-gray;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    tr {
+      border-bottom: 1px solid $darker-gray;
+    }
+  }
+
+  th {
+    text-align: start;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .icon-cell {
+    min-width: 4rem;
+  }
+
+  .extra-cell {
+    display: none;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    .extra-cell {
+      display: table-cell;
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 150px;
+  }
+}

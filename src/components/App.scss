@@ -1,0 +1,11 @@
+.App {
+  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $light-gray;
+
+  h1 {
+    text-align: center;
+  }
+}

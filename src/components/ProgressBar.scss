@@ -1,0 +1,15 @@
+.ProgressBar {
+  position: relative;
+  top: 5px;
+  border: 1px solid $white;
+  border-radius: 4px;
+  flex-grow: 1;
+  height: 5px;
+  margin: 0 6%;
+
+  .progress {
+    background-color: $white;
+    height: 5px;
+    border-radius: 4px 0 0 4px;
+  }
+}
